@@ -6,34 +6,30 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour {
 
     public Text timerText;
-    public float startTime;
-    private float initialTime;
-    private float timeLeft;
-    private bool stopTime;
+    public float timeLeft;
+    private float lastTime;
 
 	// Use this for initialization
 	void Start () {
-        initialTime = Time.time;
-        stopTime = false;
+        lastTime = Time.time;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (!stopTime)
+        if (timeLeft > 0.0f)
         {
-            float timePassed = Time.time - initialTime;
-            timeLeft = startTime - timePassed;
+            // Calculate delta time for each update
+            float timePassed = Time.time - lastTime;
+            // Update time interval
+            lastTime = Time.time;
+
+            timeLeft = timeLeft - timePassed;
 
             string minutes = ((int)timeLeft / 60).ToString();
             string seconds = (timeLeft % 60).ToString("f0"); // zero decimals
 
             timerText.text = minutes + " : " + seconds;
-
-            if (timeLeft < 0.01 )
-            {
-                stopTime = true;
-            }
         }
 	}
 }
