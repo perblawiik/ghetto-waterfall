@@ -8,16 +8,57 @@ ModelImporter:
     100000: Cube
     100002: Cylinder
     100004: //RootNode
+    100006: Ben
+    100008: Handtag
+    100010: Hjul_HB
+    100012: Hjul_HF
+    100014: Hjul_VB
+    100016: Hjul_VF
+    100018: Korg
     400000: Cube
     400002: Cylinder
     400004: //RootNode
+    400006: Ben
+    400008: Handtag
+    400010: Hjul_HB
+    400012: Hjul_HF
+    400014: Hjul_VB
+    400016: Hjul_VF
+    400018: Korg
     2100000: unnamed
+    2100002: Material_001
+    2100004: Material_002
+    2100006: Metall
+    2100008: Material
+    2100010: r_d
+    2100012: Korgplast
     2300000: Cube
     2300002: Cylinder
+    2300004: Ben
+    2300006: Handtag
+    2300008: Hjul_HB
+    2300010: Hjul_HF
+    2300012: Hjul_VB
+    2300014: Hjul_VF
+    2300016: Korg
     3300000: Cube
     3300002: Cylinder
+    3300004: Ben
+    3300006: Handtag
+    3300008: Hjul_HB
+    3300010: Hjul_HF
+    3300012: Hjul_VB
+    3300014: Hjul_VF
+    3300016: Korg
     4300000: Cylinder
     4300002: Cube
+    4300004: Hjul_VB
+    4300006: Hjul_HB
+    4300008: Hjul_HF
+    4300010: Hjul_VF
+    4300012: Ben
+    4300014: Handtag
+    4300016: Korg
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
