@@ -1,40 +1,12 @@
 fileFormatVersion: 2
-guid: 70b990950bf41754fbdf90a69983851d
-timeCreated: 1523969700
+guid: 527c6177c76330045a826062ce1958c3
+timeCreated: 1524122373
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cube
-    100002: Cylinder
-    100004: //RootNode
-    400000: Cube
-    400002: Cylinder
-    400004: //RootNode
-    2100000: unnamed
-<<<<<<< HEAD
-    2100002: Material_001
-    2100004: Material_002
-    2100006: Metall
-    2100008: Material
-    2100010: r_d
-    2100012: Korgplast
-    2100014: Metall_001
-    2100016: Metall_002
-    2100018: R_d
-    2100020: Material_003
-    2100022: Svart
-    2100024: Gr_tt
-=======
->>>>>>> parent of c7c1e25... nuttin important
-    2300000: Cube
-    2300002: Cylinder
-    3300000: Cube
-    3300002: Cylinder
-    4300000: Cylinder
-    4300002: Cube
-    7400000: Default Take
-    9500000: //RootNode
+    100000: //RootNode
+    400000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -109,7 +81,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
