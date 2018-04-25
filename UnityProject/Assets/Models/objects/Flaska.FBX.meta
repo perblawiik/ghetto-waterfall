@@ -1,42 +1,33 @@
 fileFormatVersion: 2
-guid: 2b052748ca650b845896c602ca2131cd
-timeCreated: 1524124473
+guid: 95a42c8574b06a14f9d9ac2b191cbea1
+timeCreated: 1524125299
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: Cone001
+    100000: Bas
     100002: //RootNode
-    100004: Sphere001
-    100006: Sphere002
-    100008: Sphere003
-    100010: Sphere004
-    400000: Cone001
+    100004: Hals
+    100006: Kon
+    100008: Kork
+    400000: Bas
     400002: //RootNode
-    400004: Sphere001
-    400006: Sphere002
-    400008: Sphere003
-    400010: Sphere004
-    2100000: 02 - Default
-    2100002: 03 - Default
-    2100004: 09 - Default
-    2100006: 01 - Default
-    2100008: 08 - Default
-    2300000: Cone001
-    2300002: Sphere001
-    2300004: Sphere002
-    2300006: Sphere003
-    2300008: Sphere004
-    3300000: Cone001
-    3300002: Sphere001
-    3300004: Sphere002
-    3300006: Sphere003
-    3300008: Sphere004
-    4300000: Cone001
-    4300002: Sphere001
-    4300004: Sphere002
-    4300006: Sphere003
-    4300008: Sphere004
+    400004: Hals
+    400006: Kon
+    400008: Kork
+    2100000: No Name
+    2300000: Bas
+    2300002: Hals
+    2300004: Kon
+    2300006: Kork
+    3300000: Bas
+    3300002: Hals
+    3300004: Kon
+    3300006: Kork
+    4300000: Bas
+    4300002: Kon
+    4300004: Hals
+    4300006: Kork
     9500000: //RootNode
   externalObjects: {}
   materials:

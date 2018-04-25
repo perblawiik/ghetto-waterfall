@@ -1,42 +1,44 @@
 fileFormatVersion: 2
-guid: 7912880406c7d484a90c34d66401df1a
-timeCreated: 1524124484
+guid: 460f98f222139e04c9aaf99559628783
+timeCreated: 1524121082
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Estudio
-    100004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivo
-    100006: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
-    100008: HyperNURBS_Cilindro_Cilindro1
-    100010: HyperNURBS_Cubo
-    400000: //RootNode
-    400002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Estudio
-    400004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivo
-    400006: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
-    400008: HyperNURBS_Cilindro_Cilindro1
-    400010: HyperNURBS_Cubo
-    2100000: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_EstudioMat
-    2100002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivoMat
-    2100004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visibleMat
-    2100006: HyperNURBS_Cilindro_Cilindro1Mat
-    2100008: HyperNURBS_CuboMat
-    2300000: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Estudio
-    2300002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivo
-    2300004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
-    2300006: HyperNURBS_Cilindro_Cilindro1
-    2300008: HyperNURBS_Cubo
-    3300000: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Estudio
-    3300002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivo
-    3300004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
-    3300006: HyperNURBS_Cilindro_Cilindro1
-    3300008: HyperNURBS_Cubo
-    4300000: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Estudio
-    4300002: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_Suelo_reflectivo
-    4300004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
-    4300006: HyperNURBS_Cilindro_Cilindro1
-    4300008: HyperNURBS_Cubo
+    100000: Base
+    100002: //RootNode
+    100004: PhysCamera001
+    100006: PhysCamera001.Target
+    100008: Plane 1
+    100010: Plane 2
+    100012: Plane 3
+    100014: Wall
+    400000: Base
+    400002: //RootNode
+    400004: PhysCamera001
+    400006: PhysCamera001.Target
+    400008: Plane 1
+    400010: Plane 2
+    400012: Plane 3
+    400014: Wall
+    2100000: No Name
+    2300000: Base
+    2300002: Plane 1
+    2300004: Plane 2
+    2300006: Plane 3
+    2300008: Wall
+    3300000: Base
+    3300002: Plane 1
+    3300004: Plane 2
+    3300006: Plane 3
+    3300008: Wall
+    4300000: Wall
+    4300002: Base
+    4300004: Plane 1
+    4300006: Plane 2
+    4300008: Plane 3
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -111,7 +113,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
