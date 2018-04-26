@@ -7,29 +7,47 @@ public class Timer : MonoBehaviour {
 
     public Text timerText;
     public float timeLeft;
-    private float lastTime;
+    private bool timerIsActive;
 
-	// Use this for initialization
-	void Start () {
-        lastTime = Time.time;
+    void Start ()
+    {
+        timerIsActive = false;
+        SetTimerText();
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (timeLeft > 0.0f)
+        if (timerIsActive == true)
         {
-            // Calculate delta time for each update
-            float timePassed = Time.time - lastTime;
-            // Update time interval
-            lastTime = Time.time;
+            timeLeft = timeLeft - Time.deltaTime;
+            SetTimerText();
 
-            timeLeft = timeLeft - timePassed;
-
-            string minutes = ((int)timeLeft / 60).ToString();
-            string seconds = (timeLeft % 60).ToString("f0"); // zero decimals
-
-            timerText.text = minutes + " : " + seconds;
+            if (timeLeft < 0.0f)
+            {
+                timerIsActive = false;
+            }
         }
 	}
+
+    private void SetTimerText ()
+    {
+        string minutes = ((int)timeLeft / 60).ToString("00");
+        string seconds = ((int)timeLeft % 60).ToString("00"); // zero decimals;
+        timerText.text = minutes + " : " + seconds;
+    }
+
+    public void ToggleTimer ()
+    {
+        if (timerIsActive == false)
+        {
+            timerIsActive = true;
+            timerText.color = Color.yellow;
+        }
+        else
+        {
+            timerIsActive = false;
+            timerText.color = Color.gray;
+        }
+    }
 }
