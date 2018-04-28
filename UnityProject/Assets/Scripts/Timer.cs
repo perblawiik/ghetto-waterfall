@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour {
 
-    public Text timerText;
+    public TextMeshProUGUI timerText;
     public float timeLeft;
     private bool timerIsActive;
 
@@ -26,6 +27,7 @@ public class Timer : MonoBehaviour {
             if (timeLeft < 0.0f)
             {
                 timerIsActive = false;
+                timerText.color = new Color32(128, 128, 128, 255); // Gray
             }
         }
 	}
@@ -34,7 +36,8 @@ public class Timer : MonoBehaviour {
     {
         string minutes = ((int)timeLeft / 60).ToString("00");
         string seconds = ((int)timeLeft % 60).ToString("00"); // zero decimals;
-        timerText.text = minutes + " : " + seconds;
+
+        timerText.SetText(minutes + " : " + seconds);
     }
 
     public void ToggleTimer ()
@@ -42,12 +45,12 @@ public class Timer : MonoBehaviour {
         if (timerIsActive == false)
         {
             timerIsActive = true;
-            timerText.color = Color.yellow;
+            timerText.color = new Color32(255, 255, 255, 255); // White
         }
         else
         {
             timerIsActive = false;
-            timerText.color = Color.gray;
+            timerText.color = new Color32(128, 128, 128, 255); // Gray
         }
     }
 }

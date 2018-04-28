@@ -2,22 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ScoreCollector : MonoBehaviour {
 
     private int scoreCount;
-    public Text countText;
+    public TextMeshProUGUI scoreText;
 
     // Use this for initialization
     void Start()
     {
         scoreCount = 0;
-        SetCountText();
+        SetScoreText();
     }
 
-    void SetCountText()
+    void SetScoreText()
     {
-        countText.text = "Score: " + scoreCount.ToString();
+        scoreText.SetText("Score: " + scoreCount.ToString());
     }
 
     void OnTriggerEnter(Collider other)
@@ -30,7 +31,7 @@ public class ScoreCollector : MonoBehaviour {
             scoreCount += temp.GetScoreValue();
             // Remove object from scene
             other.gameObject.SetActive(false);
-            SetCountText();
+            SetScoreText();
         }
     }
 }
