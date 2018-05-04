@@ -22,13 +22,13 @@ public class Timer : MonoBehaviour {
         if (timerIsActive == true)
         {
             timeLeft = timeLeft - Time.deltaTime;
-            SetTimerText();
 
             if (timeLeft < 0.0f)
             {
-                timerIsActive = false;
-                timerText.color = new Color32(128, 128, 128, 255); // Gray
+                StopTimer();
             }
+
+            SetTimerText();
         }
 	}
 
@@ -40,14 +40,18 @@ public class Timer : MonoBehaviour {
         timerText.SetText(minutes + " : " + seconds);
     }
 
-    public void ToggleTimer ()
+    public void StartTimer ()
     {
         if (timerIsActive == false)
         {
             timerIsActive = true;
             timerText.color = new Color32(255, 255, 255, 255); // White
         }
-        else
+    }
+
+    public void StopTimer()
+    {
+        if (timerIsActive == true)
         {
             timerIsActive = false;
             timerText.color = new Color32(128, 128, 128, 255); // Gray

@@ -6,6 +6,6 @@ public class TimerTrigger : MonoBehaviour {
 
 	private void OnTriggerEnter(Collider other)
     {
-        GameObject.Find("Player").SendMessage("ToggleTimer");
+        GameObject.Find("Player").SendMessage("StartTimer");
     }
 }

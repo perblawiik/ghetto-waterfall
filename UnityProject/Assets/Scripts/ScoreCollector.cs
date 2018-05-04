@@ -26,12 +26,24 @@ public class ScoreCollector : MonoBehaviour {
         if (other.gameObject.CompareTag("ScoreObject"))
         {
             // Copy an instance of the score object
-            ScoreObject temp = other.gameObject.GetComponent(typeof(ScoreObject)) as ScoreObject;
-            // Add score value from object
-            scoreCount += temp.GetScoreValue();
-            // Remove object from scene
-            other.gameObject.SetActive(false);
-            SetScoreText();
+            ScoreObject scoreObject = other.gameObject.GetComponent(typeof(ScoreObject)) as ScoreObject;
+            if (scoreObject.isClaimed == false)
+            {
+                scoreObject.isClaimed = true;
+                Rigidbody rb = other.gameObject.GetComponent(typeof(Rigidbody)) as Rigidbody;
+                
+                // Scale down object
+                scoreObject.transform.localScale -= new Vector3(0.75f, 0.75f, 0.75f);
+                // Move object to player
+                rb.transform.position = GameObject.Find("Basket").transform.position;
+                rb.isKinematic = false;
+                other.isTrigger = false;
+
+                // Add score value from object
+                scoreCount += scoreObject.GetScoreValue();
+                // Update score in UI
+                SetScoreText();
+            }
         }
     }
 }
