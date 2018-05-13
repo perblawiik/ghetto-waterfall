@@ -2,34 +2,59 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour {
 
-    public Text timerText;
+    public TextMeshProUGUI timerText;
     public float timeLeft;
-    private float lastTime;
+    private bool timerIsActive;
 
-	// Use this for initialization
-	void Start () {
-        lastTime = Time.time;
+    void Start ()
+    {
+        timerIsActive = false;
+        SetTimerText();
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (timeLeft > 0.0f)
+        if (timerIsActive == true)
         {
-            // Calculate delta time for each update
-            float timePassed = Time.time - lastTime;
-            // Update time interval
-            lastTime = Time.time;
+            timeLeft = timeLeft - Time.deltaTime;
 
-            timeLeft = timeLeft - timePassed;
+            if (timeLeft < 0.0f)
+            {
+                StopTimer();
+            }
 
-            string minutes = ((int)timeLeft / 60).ToString();
-            string seconds = (timeLeft % 60).ToString("f0"); // zero decimals
-
-            timerText.text = minutes + " : " + seconds;
+            SetTimerText();
         }
 	}
+
+    private void SetTimerText ()
+    {
+        string minutes = ((int)timeLeft / 60).ToString("00");
+        string seconds = ((int)timeLeft % 60).ToString("00"); // zero decimals;
+
+        timerText.SetText(minutes + " : " + seconds);
+    }
+
+    public void StartTimer ()
+    {
+        if (timerIsActive == false)
+        {
+            timerIsActive = true;
+            timerText.color = new Color32(255, 255, 255, 255); // White
+        }
+    }
+
+    public void StopTimer()
+    {
+        if (timerIsActive == true)
+        {
+            timerIsActive = false;
+            timerText.color = new Color32(128, 128, 128, 255); // Gray
+        }
+    }
 }

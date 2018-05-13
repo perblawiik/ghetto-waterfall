@@ -9,5 +9,5 @@ EditorBuildSettings:
     path: Assets/Scenes/GameMenu.unity
     guid: 9d3554421cba7514eb59ea0f7324d25b
   - enabled: 1
-    path: Assets/Scenes/CollectibleObjects.unity
-    guid: a92723e03bfb3a440bc981381eefa2ea
+    path: Assets/Scenes/GameDemo.unity
+    guid: 56a0a8e82ede4a3469bff40c1a000503
