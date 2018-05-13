@@ -9,11 +9,21 @@ public class ScoreCollector : MonoBehaviour {
     private int scoreCount;
     public TextMeshProUGUI scoreText;
 
+    //Sound
+    AudioSource pickupSound;
+
     // Use this for initialization
     void Start()
     {
         scoreCount = 0;
         SetScoreText();
+        var aSources = GetComponents<AudioSource>();
+        pickupSound = aSources[0];
+    }
+
+    void playPickupSound()
+    {
+        pickupSound.Play();        
     }
 
     void SetScoreText()
@@ -23,10 +33,12 @@ public class ScoreCollector : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
+
         if (other.gameObject.CompareTag("ScoreObject"))
         {
             // Copy an instance of the score object
             ScoreObject scoreObject = other.gameObject.GetComponent(typeof(ScoreObject)) as ScoreObject;
+
             if (scoreObject.isClaimed == false)
             {
                 scoreObject.isClaimed = true;
@@ -43,7 +55,9 @@ public class ScoreCollector : MonoBehaviour {
                 scoreCount += scoreObject.GetScoreValue();
                 // Update score in UI
                 SetScoreText();
+                pickupSound.Play();
             }
+
         }
     }
 }
