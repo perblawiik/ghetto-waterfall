@@ -38,7 +38,9 @@ RenderSettings:
   m_ReflectionIntensity: 0.381
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+
   m_IndirectSpecularColor: {r: 0.040119875, g: 0.11014059, b: 0.2852549, a: 0.381}
+
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -346,10 +348,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 19377688}
   - component: {fileID: 19377691}
   - component: {fileID: 19377690}
   - component: {fileID: 19377689}
+
   m_Layer: 0
   m_Name: glowLamp (17)
   m_TagString: Untagged
@@ -362,6 +366,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 19377687}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: -0.21260595, y: 3.3039656, z: -4.679661}
@@ -372,6 +377,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &19377689
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -433,10 +439,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 20280018}
   - component: {fileID: 20280021}
   - component: {fileID: 20280020}
   - component: {fileID: 20280019}
+
   m_Layer: 0
   m_Name: glowLamp (19)
   m_TagString: Untagged
@@ -510,19 +518,23 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 20280017}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &26339621
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 26339622}
   - component: {fileID: 26339625}
   - component: {fileID: 26339624}
   - component: {fileID: 26339623}
+
   m_Layer: 0
   m_Name: glowLamp (18)
   m_TagString: Untagged
@@ -596,9 +608,11 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 26339621}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &27107951
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1015,10 +1029,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 59901091}
   - component: {fileID: 59901094}
   - component: {fileID: 59901093}
   - component: {fileID: 59901092}
+
   m_Layer: 0
   m_Name: glowLamp (19)
   m_TagString: Untagged
@@ -1036,10 +1052,12 @@ Transform:
   m_LocalPosition: {x: 7.8573937, y: 3.3039656, z: -2.3296623}
   m_LocalScale: {x: 0.30676007, y: 0.30676022, z: 0.1}
   m_Children: []
+
   m_Father: {fileID: 1560387664}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &59901092
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1456,10 +1474,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 89912717}
   - component: {fileID: 89912720}
   - component: {fileID: 89912719}
   - component: {fileID: 89912718}
+
   m_Layer: 0
   m_Name: glowLamp (22)
   m_TagString: Untagged
@@ -1562,6 +1582,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+
   m_Father: {fileID: 1144155409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1602,16 +1623,19 @@ Light:
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!1 &108195507
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 108195508}
   - component: {fileID: 108195512}
   - component: {fileID: 108195511}
   - component: {fileID: 108195510}
+
   m_Layer: 0
   m_Name: wall (18)
   m_TagString: Untagged
@@ -1685,7 +1709,9 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 108195507}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+
 --- !u!1 &118391457
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1778,10 +1804,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 128870424}
   - component: {fileID: 128870423}
   - component: {fileID: 128870422}
   - component: {fileID: 128870421}
+
   m_Layer: 0
   m_Name: wall (1)
   m_TagString: Untagged
@@ -1855,17 +1883,21 @@ Transform:
   m_Father: {fileID: 1360749683}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 89.706, z: 0}
+
 --- !u!1 &141702410
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 141702411}
   - component: {fileID: 141702414}
   - component: {fileID: 141702413}
   - component: {fileID: 141702412}
+
   m_Layer: 0
   m_Name: glowLamp (20)
   m_TagString: Untagged
@@ -1883,10 +1915,12 @@ Transform:
   m_LocalPosition: {x: 7.857393, y: 3.3039656, z: -4.679661}
   m_LocalScale: {x: 0.30676007, y: 0.30676022, z: 0.1}
   m_Children: []
+
   m_Father: {fileID: 1156417490}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &141702412
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1948,8 +1982,10 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 160242003}
   - component: {fileID: 160242004}
+
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -1967,6 +2003,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+
   m_Father: {fileID: 1968376653}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2075,6 +2112,7 @@ Transform:
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &170840464
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2136,8 +2174,10 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 173419290}
   - component: {fileID: 173419291}
+
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -2155,6 +2195,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+
   m_Father: {fileID: 278286315}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2213,6 +2254,7 @@ GameObject:
   m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!23 &175947822
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -2403,10 +2445,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 193677544}
   - component: {fileID: 193677547}
   - component: {fileID: 193677546}
   - component: {fileID: 193677545}
+
   m_Layer: 0
   m_Name: glowLamp (23)
   m_TagString: Untagged
@@ -2488,6 +2532,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   serializedVersion: 5
   m_Component:
   - component: {fileID: 205716282}
@@ -2514,6 +2559,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &205716283
 Light:
+
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2555,10 +2601,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 208352184}
   - component: {fileID: 208352187}
   - component: {fileID: 208352186}
   - component: {fileID: 208352185}
+
   m_Layer: 0
   m_Name: glowLamp (17)
   m_TagString: Untagged
@@ -2571,6 +2619,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 208352183}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: -0.21260595, y: 3.3039656, z: -4.679661}
@@ -2581,6 +2630,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &208352185
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3205,10 +3255,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 278286315}
   - component: {fileID: 278286318}
   - component: {fileID: 278286317}
   - component: {fileID: 278286316}
+
   m_Layer: 0
   m_Name: glowLamp (23)
   m_TagString: Untagged
@@ -3221,6 +3273,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 278286314}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: -0.21260595, y: 3.3039656, z: -2.3296623}
@@ -3231,6 +3284,7 @@ Transform:
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &278286316
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3292,10 +3346,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 283468444}
   - component: {fileID: 283468447}
   - component: {fileID: 283468446}
   - component: {fileID: 283468445}
+
   m_Layer: 0
   m_Name: glowLamp (21)
   m_TagString: Untagged
@@ -3308,6 +3364,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 283468443}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 11.947393, y: 3.3039656, z: -2.3296623}
@@ -3318,6 +3375,7 @@ Transform:
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &283468445
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3531,8 +3589,10 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 295881898}
   - component: {fileID: 295881899}
+
   m_Layer: 0
   m_Name: Col_FL
   m_TagString: Untagged
@@ -3610,6 +3670,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+
   m_Father: {fileID: 1147370253}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3681,6 +3742,7 @@ Transform:
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &316117906
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3829,8 +3891,10 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 329597765}
   - component: {fileID: 329597766}
+
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -4001,6 +4065,7 @@ Transform:
   m_LocalPosition: {x: 7.857393, y: 3.3039656, z: -4.679661}
   m_LocalScale: {x: 0.30676007, y: 0.30676022, z: 0.1}
   m_Children: []
+
   m_Father: {fileID: 687036201}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -4060,16 +4125,19 @@ MeshFilter:
   m_GameObject: {fileID: 349052058}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &351796416
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 351796417}
   - component: {fileID: 351796420}
   - component: {fileID: 351796419}
   - component: {fileID: 351796418}
+
   m_Layer: 0
   m_Name: glowLamp (22)
   m_TagString: Untagged
@@ -4151,6 +4219,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   serializedVersion: 5
   m_Component:
   - component: {fileID: 365312479}
@@ -18880,10 +18949,12 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.9999886, z: -0, w: 0.0047733607}
   m_LocalPosition: {x: -0.1155, y: 0.905, z: 0.4385}
   m_LocalScale: {x: -0.002177872, y: 0.90231144, z: 0.11681074}
+
   m_Children: []
   m_Father: {fileID: 1360749683}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 179.453, z: 0}
+
 --- !u!1 &1593197924
 GameObject:
   m_ObjectHideFlags: 0
@@ -23506,6 +23577,7 @@ BoxCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1990852460
 MeshFilter:
+
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -23661,10 +23733,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 2012754454}
   - component: {fileID: 2012754457}
   - component: {fileID: 2012754456}
   - component: {fileID: 2012754455}
+
   m_Layer: 0
   m_Name: glowLamp (20)
   m_TagString: Untagged
@@ -23745,6 +23819,7 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2016004684}
@@ -23777,16 +23852,19 @@ Transform:
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2019294098
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 2019294099}
   - component: {fileID: 2019294102}
   - component: {fileID: 2019294101}
   - component: {fileID: 2019294100}
+
   m_Layer: 0
   m_Name: glowLamp (21)
   m_TagString: Untagged
@@ -23891,6 +23969,7 @@ Transform:
   m_LocalPosition: {x: 7.8573937, y: 3.3039656, z: -2.3296623}
   m_LocalScale: {x: 0.30676007, y: 0.30676022, z: 0.1}
   m_Children: []
+
   m_Father: {fileID: 1350544788}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
@@ -23930,6 +24009,7 @@ MeshRenderer:
   m_SortingOrder: 0
 --- !u!64 &2044167274
 MeshCollider:
+
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -24043,10 +24123,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 2071394382}
   - component: {fileID: 2071394385}
   - component: {fileID: 2071394384}
   - component: {fileID: 2071394383}
+
   m_Layer: 0
   m_Name: glowLamp (17)
   m_TagString: Untagged
@@ -24059,6 +24141,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 2071394381}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: -0.21260595, y: 3.3039656, z: -4.679661}
@@ -24069,6 +24152,7 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &2071394383
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -24217,10 +24301,12 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+
   - component: {fileID: 2086428021}
   - component: {fileID: 2086428024}
   - component: {fileID: 2086428023}
   - component: {fileID: 2086428022}
+
   m_Layer: 0
   m_Name: glowLamp (22)
   m_TagString: Untagged
@@ -24233,6 +24319,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 2086428020}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: 11.947393, y: 3.3039656, z: -4.679661}
@@ -24243,6 +24330,7 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &2086428022
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -24320,6 +24408,7 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 2090424602}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
   m_LocalPosition: {x: -0.21260595, y: 3.3039656, z: -2.3296623}
@@ -24330,6 +24419,7 @@ Transform:
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!23 &2090424604
+
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -24382,9 +24472,11 @@ MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+
   m_GameObject: {fileID: 2090424602}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2090973524
+
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -25261,6 +25353,7 @@ Transform:
   m_Father: {fileID: 1360749683}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 89.706, z: 0}
+
 --- !u!1 &2147023574
 GameObject:
   m_ObjectHideFlags: 0
@@ -25326,3 +25419,4 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+
