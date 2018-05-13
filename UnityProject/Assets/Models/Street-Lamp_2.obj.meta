@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 061ac40548e80b84eb057aca385f9952
-timeCreated: 1524123774
+guid: 29f6d7d694933cb468a7370a80d7a34c
+timeCreated: 1526199661
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,8 +9,7 @@ ModelImporter:
     100002: //RootNode
     400000: default
     400002: //RootNode
-    2100000: Svart
-    2100002: "Gr\xE5tt"
+    2100000: defaultMat
     2300000: default
     3300000: default
     4300000: default
@@ -66,8 +65,8 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 2
-    tangentImportMode: 2
+    normalImportMode: 0
+    tangentImportMode: 3
     normalCalculationMode: 4
   importAnimation: 1
   copyAvatar: 0
