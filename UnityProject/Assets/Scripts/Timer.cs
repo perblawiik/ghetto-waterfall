@@ -26,6 +26,7 @@ public class Timer : MonoBehaviour {
             if (timeLeft < 0.0f)
             {
                 StopTimer();
+                GameObject.Find("InGameUI").SendMessage("EndGame");
             }
 
             SetTimerText();
