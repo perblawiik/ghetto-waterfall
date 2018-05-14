@@ -8,11 +8,15 @@ public class InGameKeyboardEvent : MonoBehaviour {
 
     private GameObject pauseMenu;
     private Graphic backgroundImage;
+    private bool gameOver;
+    private float a;
 
     void Start ()
     {
         pauseMenu = GameObject.Find("PauseMenu");
         backgroundImage = GameObject.Find("UIBackground").GetComponent<Graphic>();
+        gameOver = false;
+        a = 0.0f; 
         ContinueGame();
     }
 
@@ -24,6 +28,16 @@ public class InGameKeyboardEvent : MonoBehaviour {
                 PauseGame();
             else
                 ContinueGame();
+        }
+
+        if (gameOver)
+        {
+            // Black fade out
+            if ( (a / 5.0f) < 1.0f)
+            {
+                a += Time.deltaTime;
+                backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, a / 4.0f);
+            }
         }
     }
 
@@ -39,5 +53,11 @@ public class InGameKeyboardEvent : MonoBehaviour {
         Time.timeScale = 1;
         backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
         pauseMenu.SetActive(false);
+    }
+
+    public void EndGame()
+    {
+        GameObject.Find("StoreBase").gameObject.SetActive(false);
+        gameOver = true;
     }
 }
