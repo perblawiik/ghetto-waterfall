@@ -1,7 +1,5 @@
 fileFormatVersion: 2
 guid: 88c3b4174c7d27b459361de8272d19a3
-timeCreated: 1524124657
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -37,6 +35,7 @@ ModelImporter:
     4300004: Escenario_B_sico_v4__E_P__Escenario_suelo_y_fondo_suelo_visible
     4300006: HyperNURBS_Cilindro_Cilindro1
     4300008: HyperNURBS_Cubo
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -56,6 +55,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
