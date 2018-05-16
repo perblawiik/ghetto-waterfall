@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class TimerTrigger : MonoBehaviour {
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerExit(Collider other)
     {
-        GameObject.Find("Player").SendMessage("StartTimer");
+        if (other.gameObject.CompareTag("PlayerCollider"))
+        {
+            Timer t = other.gameObject.GetComponent(typeof(Timer)) as Timer;
+            t.ToggleTimer();
+        }
     }
 }

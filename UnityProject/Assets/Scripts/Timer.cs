@@ -8,7 +8,7 @@ public class Timer : MonoBehaviour {
 
     public TextMeshProUGUI timerText;
     public float timeLeft;
-    private bool timerIsActive;
+    public bool timerIsActive;
 
     void Start ()
     {
@@ -41,21 +41,27 @@ public class Timer : MonoBehaviour {
         timerText.SetText(minutes + " : " + seconds);
     }
 
+    public void ToggleTimer ()
+    {
+        if (timerIsActive)
+        {
+            StopTimer();
+        }
+        else
+        {
+            StartTimer();
+        }
+    }
+
     public void StartTimer ()
     {
-        if (timerIsActive == false)
-        {
-            timerIsActive = true;
-            timerText.color = new Color32(255, 255, 255, 255); // White
-        }
+        timerIsActive = true;
+        timerText.color = new Color32(255, 255, 255, 255); // White
     }
 
     public void StopTimer()
     {
-        if (timerIsActive == true)
-        {
-            timerIsActive = false;
-            timerText.color = new Color32(128, 128, 128, 255); // Gray
-        }
+        timerIsActive = false;
+        timerText.color = new Color32(128, 128, 128, 255); // Gray
     }
 }
