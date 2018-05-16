@@ -8,6 +8,7 @@ public class InGameKeyboardEvent : MonoBehaviour {
 
     private GameObject pauseMenu;
     private Graphic backgroundImage;
+    private TextMeshProUGUI gameOverMessage;
     private bool gameOver;
     private float animationTimer;
     private const float ANIMATION_TIME = 4.0f;
@@ -19,6 +20,9 @@ public class InGameKeyboardEvent : MonoBehaviour {
         gameOver = false;
         animationTimer = 0.0f; 
         ContinueGame();
+
+        gameOverMessage = GameObject.Find("GameOverText").GetComponent<TextMeshProUGUI>();
+        gameOverMessage.gameObject.SetActive(false);
     }
 
 	void Update ()
@@ -34,13 +38,15 @@ public class InGameKeyboardEvent : MonoBehaviour {
         if (gameOver)
         {
             // Fade to black
-            if ( (animationTimer / ANIMATION_TIME) < 1.0f)
+            if ( (animationTimer / ANIMATION_TIME) < 1.5f)
             {
                 animationTimer += Time.deltaTime;
                 backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, animationTimer / ANIMATION_TIME);
             }
             else
             {
+                // Remove game over message
+                gameOverMessage.gameObject.SetActive(false);
                 // Open pause menu
                 PauseGame();
 
@@ -82,6 +88,8 @@ public class InGameKeyboardEvent : MonoBehaviour {
     public void EndGame()
     {
         GameObject.Find("StoreBase").gameObject.SetActive(false);
+        gameOverMessage.SetText("You ran out of time!");
+        gameOverMessage.gameObject.SetActive(true);
         gameOver = true;
     }
 }
