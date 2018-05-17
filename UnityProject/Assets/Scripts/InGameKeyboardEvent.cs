@@ -12,15 +12,17 @@ public class InGameKeyboardEvent : MonoBehaviour {
     private bool gameOver;
     private float animationTimer;
     private const float ANIMATION_TIME = 4.0f;
+    private GameObject player;
 
     void Start ()
     {
+        player = GameObject.Find("Player").gameObject;
         pauseMenu = GameObject.Find("PauseMenu");
+        pauseMenu.SetActive(false);
         backgroundImage = GameObject.Find("UIBackground").GetComponent<Graphic>();
         gameOver = false;
-        animationTimer = 0.0f; 
-        ContinueGame();
-
+        animationTimer = 0.0f;
+       
         gameOverMessage = GameObject.Find("GameOverText").GetComponent<TextMeshProUGUI>();
         gameOverMessage.gameObject.SetActive(false);
     }
@@ -40,6 +42,7 @@ public class InGameKeyboardEvent : MonoBehaviour {
             // Fade to black
             if ( (animationTimer / ANIMATION_TIME) < 1.5f)
             {
+
                 animationTimer += Time.deltaTime;
                 backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, animationTimer / ANIMATION_TIME);
             }
@@ -67,6 +70,7 @@ public class InGameKeyboardEvent : MonoBehaviour {
     public void PauseGame()
     {
         Time.timeScale = 0;
+        player.GetComponentInChildren<Dot_Truck_Controller>().PauseAudio();
         if (!gameOver)
         {
             backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, 0.7f);
@@ -78,6 +82,7 @@ public class InGameKeyboardEvent : MonoBehaviour {
     public void ContinueGame()
     {
         Time.timeScale = 1;
+        player.GetComponentInChildren<Dot_Truck_Controller>().UnPauseAudio();
         if (!gameOver)
         {
             backgroundImage.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
@@ -87,7 +92,11 @@ public class InGameKeyboardEvent : MonoBehaviour {
 
     public void EndGame()
     {
+        // Stop shopping cart audio
+        player.GetComponentInChildren<Dot_Truck_Controller>().PauseAudio();
+        // Remove floor
         GameObject.Find("StoreBase").gameObject.SetActive(false);
+        // Set game over message
         gameOverMessage.SetText("You ran out of time!");
         gameOverMessage.gameObject.SetActive(true);
         gameOver = true;
