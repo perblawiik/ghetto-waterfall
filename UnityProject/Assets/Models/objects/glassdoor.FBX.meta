@@ -1,27 +1,39 @@
 fileFormatVersion: 2
-guid: 477e0075cba68f247ae24f08e5546b44
+<<<<<<< HEAD
+guid: 0424cb010b895a74686fbda9abc2b66f
+timeCreated: 1526457808
+=======
+guid: 972d74192cc387e45bbee2eca97b74ef
+timeCreated: 1526457618
+>>>>>>> master
+licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cylinder001
-    100004: Sphere001
-    100006: Sphere002
-    400000: //RootNode
-    400002: Cylinder001
-    400004: Sphere001
-    400006: Sphere002
-    2100000: 02 - Default
-    2100002: 02 - Defaultaa
-    2300000: Cylinder001
-    2300002: Sphere001
-    2300004: Sphere002
-    3300000: Cylinder001
-    3300002: Sphere001
-    3300004: Sphere002
-    4300000: Sphere002
-    4300002: Sphere001
-    4300004: Cylinder001
+    100000: Box001
+    100002: Box002
+    100004: Box003
+    100006: Box004
+    100008: //RootNode
+    400000: Box001
+    400002: Box002
+    400004: Box003
+    400006: Box004
+    400008: //RootNode
+    2100000: 08 - Default
+    2100002: 07 - Default
+    2300000: Box001
+    2300002: Box002
+    2300004: Box003
+    2300006: Box004
+    3300000: Box001
+    3300002: Box002
+    3300004: Box003
+    3300006: Box004
+    4300000: Box001
+    4300002: Box002
+    4300004: Box003
+    4300006: Box004
     9500000: //RootNode
   externalObjects: {}
   materials:
