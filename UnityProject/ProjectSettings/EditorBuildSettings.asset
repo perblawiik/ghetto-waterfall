@@ -12,5 +12,5 @@ EditorBuildSettings:
     path: Assets/Scenes/GameDemo.unity
     guid: 56a0a8e82ede4a3469bff40c1a000503
   - enabled: 1
-    path: Assets/Scenes/PerGameDemo.unity
-    guid: b72836ed80d76fa478dd4732a2b54268
+    path: Assets/Scenes/GameAlpha.unity
+    guid: b3f0220a70f4b6e46b1b1587c92726b4
