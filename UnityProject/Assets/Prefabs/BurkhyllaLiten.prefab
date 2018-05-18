@@ -246,7 +246,7 @@ GameObject:
   - component: {fileID: 95028376309637492}
   - component: {fileID: 65361838441788482}
   m_Layer: 0
-  m_Name: Mitthylla (64)
+  m_Name: BurkhyllaLiten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -16,6 +16,7 @@ public class InGameKeyboardEvent : MonoBehaviour {
 
     void Start ()
     {
+        Time.timeScale = 1;
         player = GameObject.Find("Player").gameObject;
         pauseMenu = GameObject.Find("PauseMenu");
         pauseMenu.SetActive(false);
