@@ -17,8 +17,6 @@ public class door_automation : MonoBehaviour {
     public Vector3 delta_R;
 
 
-
-    private float startTime;
     private float journeyLength;
  
 
@@ -61,9 +59,9 @@ public class door_automation : MonoBehaviour {
  
     void OnTriggerEnter(Collider other)
     {
-        if(other.name == "Car_Collider")
+        if(other.name == "PlayerCollider")
         {
-            startTime = Time.time;
+          
             open = true;
             close = false;
             
