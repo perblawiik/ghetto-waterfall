@@ -181,6 +181,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4775216758452190}
+  - component: {fileID: 65025623444385870}
   m_Layer: 0
   m_Name: fallenCart
   m_TagString: Untagged
@@ -573,7 +574,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1656156107046372}
   m_LocalRotation: {x: 0.53517455, y: 0.66985583, z: 0.355342, w: 0.3723084}
-  m_LocalPosition: {x: 39.568, y: 6.139, z: -38.457}
+  m_LocalPosition: {x: -6.6, y: 5.97, z: 41.49}
   m_LocalScale: {x: 0.31432036, y: 0.31432, z: 0.31432036}
   m_Children:
   - {fileID: 4570000180211984}
@@ -1084,6 +1085,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1834654367645612}
   m_Mesh: {fileID: 4300000, guid: 815f9888385954f4db1e2a60f4ede274, type: 3}
+--- !u!65 &65025623444385870
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1656156107046372}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!198 &198218316081927254
 ParticleSystem:
   m_ObjectHideFlags: 1
