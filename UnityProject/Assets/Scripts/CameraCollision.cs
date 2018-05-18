@@ -11,10 +11,12 @@ public class CameraCollision : MonoBehaviour {
     public Vector3 dollyDirAdjusted;
     public float distance;
     GameObject timerTrigger;
+   public GameObject doors;
 
     private void Start()
     {
         timerTrigger = GameObject.Find("TimerTrigger").gameObject;
+       
     }
 
 
@@ -32,9 +34,10 @@ public class CameraCollision : MonoBehaviour {
         RaycastHit hit;
 
         float dist = Vector3.Distance(transform.parent.position, timerTrigger.transform.position);
+        float doordist = Vector3.Distance(transform.parent.position, doors.transform.position);
 
      
-        if (Physics.Linecast(transform.parent.position, desiredCameraPos, out hit) && Mathf.Abs(dist) > 7)
+        if (Physics.Linecast(transform.parent.position, desiredCameraPos, out hit) && Mathf.Abs(dist) > 7 && Mathf.Abs(doordist) > 19)
         {
             distance = Mathf.Clamp((hit.distance * 0.9f), minDistance, maxDistance);
 

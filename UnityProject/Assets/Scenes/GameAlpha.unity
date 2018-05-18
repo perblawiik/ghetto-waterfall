@@ -810,6 +810,7 @@ MonoBehaviour:
   smooth: 10
   dollyDirAdjusted: {x: 0, y: 0, z: 0}
   distance: 0
+  doors: {fileID: 1547578845}
 --- !u!114 &260019340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3516,6 +3517,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 486130d0227fb4621bf1687de7ed1656, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1547578845 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1197926037453240, guid: 73ba6c01aab551b4b997186953946299,
+    type: 2}
+  m_PrefabInternal: {fileID: 1603599501}
 --- !u!1001 &1565858740
 Prefab:
   m_ObjectHideFlags: 0
@@ -3636,7 +3642,8 @@ Prefab:
       propertyPath: startMarker_R.z
       value: 0.502
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 114462622746852788, guid: 73ba6c01aab551b4b997186953946299, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 73ba6c01aab551b4b997186953946299, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1622704859
