@@ -32,13 +32,13 @@ RenderSettings:
   m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
-  m_DefaultReflectionMode: 0
+  m_DefaultReflectionMode: 1
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 2
   m_ReflectionIntensity: 0.385
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.040549222, g: 0.111301765, b: 0.2882469, a: 0.385}
+  m_IndirectSpecularColor: {r: 0.040549222, g: 0.11130175, b: 0.2882469, a: 0.385}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -562,8 +562,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1504793077488258, guid: c868e618b9ad08740afe9e2c496e7471, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 23277469391834874, guid: c868e618b9ad08740afe9e2c496e7471,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d08c93063ab96a24496a3c560cc445cd, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c868e618b9ad08740afe9e2c496e7471, type: 2}
   m_IsPrefabParent: 0
