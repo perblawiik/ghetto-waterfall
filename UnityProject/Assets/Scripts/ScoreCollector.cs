@@ -11,11 +11,13 @@ public class ScoreCollector : MonoBehaviour {
     private bool text3DIsVisible;
     private float animationTimer;
     private GameObject scoreDisplayObject;
+    private Rigidbody playerRb;
     private const float ANIMATION_TIME = 0.5f;
 
     // Use this for initialization
     void Start()
     {
+        playerRb = GameObject.Find("Player").gameObject.GetComponent(typeof(Rigidbody)) as Rigidbody;
         scoreDisplayObject = GameObject.Find("ScoreDisplay").gameObject;
         text3DIsVisible = false;
         animationTimer = 0.0f;
@@ -69,10 +71,11 @@ public class ScoreCollector : MonoBehaviour {
                 // Scale down object
                 scoreObject.transform.localScale -= new Vector3(0.75f, 0.75f, 0.75f);
 
-                // Move object to player
+                // Move object to player basket
                 Rigidbody rb = other.gameObject.GetComponent(typeof(Rigidbody)) as Rigidbody;
                 rb.transform.position = GameObject.Find("Basket").transform.position;
                 rb.isKinematic = false;
+                rb.velocity = playerRb.velocity;
                 other.isTrigger = false;
             }
         }
@@ -86,5 +89,10 @@ public class ScoreCollector : MonoBehaviour {
 
         scoreText3D.SetText("+" + score.ToString());
         animationTimer = ANIMATION_TIME;
+    }
+
+    public int GetScoreCount ()
+    {
+        return scoreCount;
     }
 }

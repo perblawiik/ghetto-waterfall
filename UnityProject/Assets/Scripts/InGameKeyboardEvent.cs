@@ -91,14 +91,28 @@ public class InGameKeyboardEvent : MonoBehaviour {
         pauseMenu.SetActive(false);
     }
 
-    public void EndGame()
+    public void LosingScreen ()
     {
-        // Stop shopping cart audio
-        player.GetComponentInChildren<Dot_Truck_Controller>().PauseAudio();
         // Remove floor
         GameObject.Find("StoreBase").gameObject.SetActive(false);
         // Set game over message
         gameOverMessage.SetText("You ran out of time!");
+        EndGame();
+    }
+
+    public void WinningScreen ()
+    {
+        ScoreCollector temp = GameObject.Find("Player").GetComponentInChildren<ScoreCollector>();
+        // Set game over message
+        gameOverMessage.SetText("You finished with " + temp.GetScoreCount() + " points!");
+        EndGame();
+    }
+
+    public void EndGame()
+    {
+        // Stop shopping cart audio
+        player.GetComponentInChildren<Dot_Truck_Controller>().PauseAudio();
+        
         gameOverMessage.gameObject.SetActive(true);
         gameOver = true;
     }
