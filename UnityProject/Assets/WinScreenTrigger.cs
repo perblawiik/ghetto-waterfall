@@ -8,7 +8,7 @@ public class WinScreenTrigger : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("PlayerCollider"))
         {
-            GameObject.Find("InGameUI").SendMessage("WinningScreen");
+            GameObject.Find("InGameUI").SendMessage("WinScreen");
         }
     }
 }
