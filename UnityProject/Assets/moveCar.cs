@@ -11,18 +11,20 @@ public class moveCar : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         startPosition = transform.position;
+        forwardVector = Vector3.forward * speed;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
+        transform.Translate(forwardVector * Time.deltaTime);
 	}
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("EndOfRoad"))
         {
-            transform.position = startPosition;
+            Destroy(gameObject);
+            Destroy(this);
         }
     }
 }
