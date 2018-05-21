@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ScoreObject
   - PlayerCollider
+  - EndOfRoad
   layers:
   - Default
   - TransparentFX
