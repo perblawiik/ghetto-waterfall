@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.234
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.024631679, g: 0.06763478, b: 0.17519704, a: 0.234}
+  m_IndirectSpecularColor: {r: 0.024653738, g: 0.06765505, b: 0.17519356, a: 0.234}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -7908,7 +7908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c73e278ff2d2bc4b9b7e87a18cf892a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxMotorTorque: 300
+  maxMotorTorque: 75
   maxSteeringAngle: 50
   truck_Infos:
   - leftWheel: {fileID: 1828141151}
@@ -46921,23 +46921,6 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!1 &1236195492 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1629192710611648, guid: 655202bf9bf874e1ba89df07a7858bbb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1254178540}
---- !u!65 &1236195493
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1236195492}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1237541070
 GameObject:
   m_ObjectHideFlags: 0
@@ -47870,7 +47853,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4290544097961974, guid: 655202bf9bf874e1ba89df07a7858bbb, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.16
+      value: 5.05
       objectReference: {fileID: 0}
     - target: {fileID: 4290544097961974, guid: 655202bf9bf874e1ba89df07a7858bbb, type: 2}
       propertyPath: m_LocalPosition.z
@@ -47899,6 +47882,36 @@ Prefab:
     - target: {fileID: 4290544097961974, guid: 655202bf9bf874e1ba89df07a7858bbb, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 6.032711
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Center.y
+      value: 2.5163555
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.8348804
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Center.x
+      value: 1.6832396
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Center.z
+      value: 0.023828417
+      objectReference: {fileID: 0}
+    - target: {fileID: 65925851652716350, guid: 655202bf9bf874e1ba89df07a7858bbb,
+        type: 2}
+      propertyPath: m_Size.z
+      value: 0.7620542
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 655202bf9bf874e1ba89df07a7858bbb, type: 2}
