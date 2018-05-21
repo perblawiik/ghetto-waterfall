@@ -117,12 +117,16 @@ public class InGameKeyboardEvent : MonoBehaviour {
         pauseMenu.SetActive(false);
     }
 
-    public void LosingScreen ()
+    public void LosingScreen (string message, bool timeIsOut)
     {
         // Remove floor
-        GameObject.Find("StoreBase").gameObject.SetActive(false);
+        if (timeIsOut)
+        {
+            GameObject.Find("StoreBase").gameObject.SetActive(false);
+        }
+
         // Set game over message
-        gameOverMessage.SetText("You ran out of time!");
+        gameOverMessage.SetText(message);
 
         gameState = GameState.LOSE;
         EndGame();

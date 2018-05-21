@@ -18,6 +18,7 @@ public class door_automation : MonoBehaviour {
 
 
     private float journeyLength;
+    private float multiplier;
  
 
     bool open = false;
@@ -25,7 +26,7 @@ public class door_automation : MonoBehaviour {
 
     void Start()
     {
-
+        multiplier = 0.1f;
         startMarker_L = door_L.transform.position;
         startMarker_R = door_R.transform.position;
     }
@@ -36,10 +37,10 @@ public class door_automation : MonoBehaviour {
             var delta_R = Vector3.Magnitude(door_R.transform.position - startMarker_R);
             var delta_L = Vector3.Magnitude(door_L.transform.position - startMarker_L);
 
-            if (delta_R < 6)
-                door_R.transform.Translate(new Vector3(0.0f, 0.0f, Time.deltaTime * 10.0f));
-            if (delta_L < 6)
-                door_L.transform.Translate(new Vector3(0.0f, 0.0f, -(Time.deltaTime * 10.0f)));
+            if (delta_R < 6.0f)
+                door_R.transform.Translate(Vector3.forward * multiplier);
+            if (delta_L < 6.0f)
+                door_L.transform.Translate(Vector3.back * multiplier);
         }
 
         if(close)
@@ -48,9 +49,9 @@ public class door_automation : MonoBehaviour {
             var delta_L = Vector3.Magnitude(door_L.transform.position - startMarker_L);
 
             if (delta_R > 0.01f)
-                door_R.transform.Translate(new Vector3(0.0f, 0.0f, -(Time.deltaTime * 10.0f)));
+                door_R.transform.Translate(Vector3.back * multiplier);
             if (delta_L > 0.01f)
-                door_L.transform.Translate(new Vector3(0.0f, 0.0f, Time.deltaTime * 10.0f));
+                door_L.transform.Translate(Vector3.forward * multiplier);
         }
 
     }

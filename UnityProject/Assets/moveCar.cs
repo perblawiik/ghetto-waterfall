@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class moveCar : MonoBehaviour {
 
-    private Vector3 startPosition;
     private Vector3 forwardVector;
     public float speed;
 
 	// Use this for initialization
 	void Start () {
-        startPosition = transform.position;
         forwardVector = Vector3.forward * speed;
     }
 	
@@ -25,6 +23,14 @@ public class moveCar : MonoBehaviour {
         {
             Destroy(gameObject);
             Destroy(this);
+        }
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
+        if (other.gameObject.name == "Player")
+        {
+            GameObject.Find("InGameUI").gameObject.GetComponent<InGameKeyboardEvent>().LosingScreen("You got hit!", false);
         }
     }
 }

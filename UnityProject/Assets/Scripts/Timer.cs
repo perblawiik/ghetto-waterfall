@@ -25,7 +25,7 @@ public class Timer : MonoBehaviour {
             if (timeLeft < 0.0f)
             {
                 StopTimer();
-                GameObject.Find("InGameUI").SendMessage("LosingScreen");
+                GameObject.Find("InGameUI").gameObject.GetComponent<InGameKeyboardEvent>().LosingScreen("You ran out of time!", true);
             }
 
             SetTimerText();
